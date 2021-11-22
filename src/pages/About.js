@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../Components/logo";
 
 const About = () => {
 
@@ -6,6 +7,8 @@ const About = () => {
         <React.Fragment>
 
         <h1>About</h1>
+
+        <Logo/>
 
         </React.Fragment>
     );
