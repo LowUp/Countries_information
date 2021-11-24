@@ -1,6 +1,5 @@
 import React from "react";
 import Body from "../Components/body";
-import Countries from "../Components/countries";
 import Logo from "../Components/logo";
 
 const Home = () => {
@@ -8,7 +7,7 @@ const Home = () => {
     return(
         <React.Fragment>
 
-        <h1>Home</h1>
+        <h2>Most populated countries</h2>
         <Logo/>
         <Body/>
 

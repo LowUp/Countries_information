@@ -6,8 +6,8 @@ const Navigation = () =>{
     return(
         <div className="navigation">
 
-        <NavLink exact to="/" activeClassName="nav-active">Home</NavLink>
-        <NavLink exact to="/about" activeClassName="nav-active">About</NavLink>
+        <NavLink exact to="/" className={(navData) => navData.isActive ? "nav-active" : "" }>Homepage</NavLink>
+        <NavLink exact to="/about" className={(navData) => navData.isActive ? "nav-active" : "" }>About</NavLink>
 
         </div>
     );

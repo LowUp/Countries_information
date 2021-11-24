@@ -4,17 +4,21 @@ const Card = (props) =>{
 
     const {country} = props;
 
+    const numberFormat = (x) =>{
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
     return(
-        <React.Fragment>
         <div className="card">
-        <img src={country.flag} alt="flag" />
+        <img src={country.flags.png} alt="flag" />
+        <div className="data-container">
             <ul>
-             <li>Country: {country.name} </li>
+             <li>{country.name} </li>
              <li>Capital: {country.capital} </li>
-             <li>Population: {country.population} </li>
+             <li>Population: {numberFormat(country.population)}</li>
             </ul>
         </div>
-        </React.Fragment>
+        </div>
     );
 }
 

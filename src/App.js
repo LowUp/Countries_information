@@ -1,4 +1,4 @@
-import './App.css';
+import React from 'react';
 import Header from './Components/header';
 
 
@@ -6,12 +6,12 @@ import Header from './Components/header';
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
     
     <Header/>    
 
 
-    </div>
+    </React.Fragment>
   );
 }
 
