@@ -1,5 +1,5 @@
 # Project details
- ReactJS app that displays general information about certains (e.g population) using a country rest API.
+ ReactJS app that displays general information about certain (e.g population) using a country rest API.
  
  * Features:
   * Displays countries information such as: (country name, capital, population).
