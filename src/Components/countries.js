@@ -14,6 +14,7 @@ const Countries = () =>{
     const [rangeVal, setRangeVal] = useState(10);
     const [selectedRadio, setSelectedRadio] = useState("");
     const radios = ["Europe","Africa","Asia","America","Oceania"];
+    const [colour,setColour] = useState("");
 
     useEffect(() =>{
 
@@ -37,7 +38,11 @@ const Countries = () =>{
         return sortedArray;
      };
 
+     const ChangeColor = () =>{
+        return sortedCountry().length === 250 ? "red" : "";
+     };
 
+     setColour(ChangeColor());
      setSorted(sortedCountry());
 
     }, [data, rangeVal,playOnce]); 
@@ -45,12 +50,15 @@ const Countries = () =>{
 
     return(
         <div className="countries">
+
+          <p className="counter" style={{color: colour}} >{rangeVal}</p>
           <div className="sort-container">
 
             <input type="range" 
             min="1" max="250" 
             value={rangeVal} 
-            onChange={(e) => setRangeVal(e.target.value)}/>
+            onChange={(e) => setRangeVal(e.target.value)}
+            />
 
             <ul>
                 {radios.map((radio) =>{

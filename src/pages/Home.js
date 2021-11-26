@@ -7,7 +7,7 @@ const Home = () => {
     return(
         <React.Fragment>
 
-        <h2>Most populated countries</h2>
+        <h2 style={{textAlign: "center"}} >Most populated countries</h2>
         <Logo/>
         <Body/>
 
